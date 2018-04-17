@@ -1,0 +1,16 @@
+from random import randint 
+a = []
+b = []
+mix_list = [] 
+for i in range(12):
+   ran_num = randint(0,100)
+   a.append(ran_num)
+   ran_num2 = randint(0,100)
+   b.append(ran_num2) 
+print(a)
+print(b)
+for x in range(12):
+   for y in range(12):
+      if a[x] == b[y]:
+         mix_list.append(a[x])
+print(mix_list)
